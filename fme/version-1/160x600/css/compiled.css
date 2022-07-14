@@ -1,0 +1,144 @@
+@font-face {
+  font-family: quantico-regular;
+  src: url(font/Quantico-Regular.ttf);
+}
+body {
+  max-width: 160px;
+  max-height: 600px;
+  width: 160px;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+body:hover {
+  cursor: pointer;
+}
+
+.background {
+  height: 414px;
+  width: 100%;
+  z-index: 2;
+  background-image: url("../img/bg-160x600.png");
+  position: absolute;
+  bottom: 0;
+}
+
+.background-image {
+  transition: 3s linear;
+  z-index: -1;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+main img {
+  width: 100%;
+}
+
+.shape {
+  height: 100%;
+  position: absolute;
+}
+
+.background-wrapper {
+  display: flex;
+  position: relative;
+}
+.background-wrapper .background-image {
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+}
+#banner #text {
+  position: absolute;
+  z-index: 9;
+  left: 15px;
+  transition: 0.5s ease-out;
+  width: 100%;
+}
+#banner #text .text {
+  color: white;
+  font-size: 34px;
+  font-family: quantico-regular;
+  position: absolute;
+  transition: 0.5s ease-out;
+  left: -336px;
+  line-height: 38px;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  margin-top: 40px;
+}
+#banner #text .text-1 {
+  line-height: 38px;
+  width: calc(100% - 20px);
+  left: 0;
+}
+#banner .logos {
+  position: absolute;
+  bottom: 25px;
+  transition: 0.6s;
+  z-index: 9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#banner .logos p {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: quantico-regular;
+}
+#banner .logos img {
+  max-width: 67%;
+  display: flex;
+}
+#banner .call-to-action {
+  position: absolute;
+  left: -336px;
+  bottom: 120px;
+  width: 100%;
+  transition: 0.5s ease-out;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+}
+#banner .call-to-action button {
+  transition: 0.5s;
+  border: 2px solid white;
+  color: white;
+  border-radius: 28px;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-family: quantico-regular;
+}
+#banner .call-to-action button:hover {
+  background-color: white;
+  color: #6e5ef2;
+}
+#banner.stage-2 .call-to-action {
+  left: 0;
+}
+#banner.stage-2 .background-image {
+  transform: scale(1.05);
+}
+#banner.stage-2 #text .text-1 {
+  left: 336px;
+}
+#banner.stage-2 #text .text-2 {
+  left: 0;
+}
+
+/*# sourceMappingURL=compiled.css.map */

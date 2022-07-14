@@ -1,0 +1,246 @@
+@font-face {
+  font-family: quantico-regular;
+  src: url(font/Quantico-Regular.ttf);
+}
+body {
+  max-width: 336px;
+  max-height: 280px;
+  width: 336px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+body:hover {
+  cursor: pointer;
+}
+
+.background-image {
+  transition: 3s linear;
+  z-index: -1;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+main img {
+  width: 100%;
+}
+
+.shape {
+  height: 100%;
+  position: absolute;
+}
+
+.arrow {
+  width: 280px;
+  height: 100%;
+  position: absolute;
+  left: -280px;
+  width: 0;
+  height: 0;
+  border-top: 140px solid transparent;
+  border-bottom: 140px solid transparent;
+}
+.arrow.arrow-one {
+  border-left: 75px solid #8c7ff5;
+  transition: 0.5s;
+}
+.arrow.arrow-one::before {
+  width: 200px;
+  height: 280px;
+  top: -140px;
+  left: -275px;
+  position: relative;
+  background-color: #8c7ff5;
+  display: block;
+  content: "";
+}
+.arrow.arrow-two {
+  border-left: 75px solid #6e5ef2;
+  transition: 0.7s;
+}
+.arrow.arrow-two::before {
+  width: 200px;
+  height: 280px;
+  top: -140px;
+  left: -275px;
+  position: relative;
+  background-color: #6e5ef2;
+  display: block;
+  content: "";
+}
+
+.background-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+.background-wrapper .background-image {
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+#banner {
+  display: flex;
+}
+#banner #text {
+  position: absolute;
+  z-index: 9;
+  left: 25px;
+  transition: 0.5s ease-out;
+  width: 100%;
+}
+#banner #text .text {
+  color: white;
+  font-size: 50px;
+  font-family: quantico-regular;
+  position: absolute;
+  transition: 0.5s ease-out;
+  left: -336px;
+  line-height: 55px;
+  max-width: 100%;
+  width: calc(100% - 50px);
+  margin: 0;
+  margin-top: 25px;
+}
+#banner #text .text-1 {
+  line-height: 55px;
+  width: calc(100% - 75px);
+}
+#banner .logos {
+  position: absolute;
+  bottom: -75px;
+  left: -25px;
+  transition: 0.6s;
+  z-index: 9;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#banner .logos p {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: quantico-regular;
+}
+#banner .logos img {
+  max-width: 70%;
+  display: flex;
+}
+#banner .call-to-action {
+  position: absolute;
+  bottom: -75px;
+  left: 25px;
+  transition: 0.3s;
+  z-index: 9;
+}
+#banner .call-to-action button {
+  transition: 0.5s;
+  border: 2px solid white;
+  color: white;
+  border-radius: 28px;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 18px;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-family: quantico-regular;
+}
+#banner .call-to-action button:hover {
+  background-color: white;
+  color: #6e5ef2;
+}
+#banner.stage-2 .logos {
+  bottom: 25px;
+}
+#banner.stage-2 .arrow-one {
+  left: 225px;
+}
+#banner.stage-2 .arrow-two {
+  left: 125px;
+}
+#banner.stage-2 .background-image {
+  transform: scale(1.05);
+}
+#banner.stage-3 #text .text-1 {
+  left: 0;
+}
+#banner.stage-3 .logos {
+  bottom: 25px;
+}
+#banner.stage-3 .arrow-one {
+  left: 225px;
+}
+#banner.stage-3 .arrow-two {
+  left: 125px;
+}
+#banner.stage-3 .background-image {
+  transform: scale(1.1);
+}
+#banner.stage-4 #text .text-2 {
+  left: 0;
+}
+#banner.stage-4 .call-to-action {
+  bottom: 25px;
+}
+#banner.stage-4 .logos {
+  bottom: -75px;
+}
+#banner.stage-4 .arrow-one {
+  left: 225px;
+}
+#banner.stage-4 .arrow-two {
+  left: 125px;
+}
+#banner.stage-4 .logos {
+  bottom: -75px;
+}
+#banner.stage-4 .background-image {
+  transform: scale(1.1);
+}
+#banner.stage-5 #text .text-2 {
+  left: -336px;
+}
+#banner.stage-5 .call-to-action {
+  bottom: -75px;
+}
+#banner.stage-5 .arrow-one {
+  left: -336px;
+}
+#banner.stage-5 .arrow-two {
+  left: -336px;
+}
+#banner.stage-5 .logos {
+  bottom: -75px;
+}
+#banner.stage-5 .background-image {
+  transform: scale(1);
+}
+#banner.stage-6 #text .text-2 {
+  left: -336px;
+  transition: 0s;
+}
+#banner.stage-6 .call-to-action {
+  bottom: -75px;
+}
+#banner.stage-6 .arrow-one {
+  left: -336px;
+  transition: 0s;
+}
+#banner.stage-6 .arrow-two {
+  left: -336px;
+  transition: 0s;
+}
+#banner.stage-6 .logos {
+  bottom: -75px;
+}
+#banner.stage-6 .background-image {
+  transform: scale(1);
+}
+
+/*# sourceMappingURL=compiled.css.map */

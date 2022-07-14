@@ -1,0 +1,19 @@
+{
+    "version": "1.0", 
+
+    "title": "970x250 FME Banner", 
+
+    "width" : "970", 
+    "height": "250", 
+
+    "events": {
+        "enabled": 0, 
+        "list": {}
+    },
+
+    "clicktags": {
+        "clickTAG": "https://www.fme.nl/energielabel?utm_medium=display&utm_source=banner&utm_campaign=energietransitie-fase2&utm_content=970x250"
+    },
+
+    "source": "index.html"
+}

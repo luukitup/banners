@@ -1,0 +1,476 @@
+@font-face {
+	font-family: quantico-regular;
+	src: url(font/Quantico-Regular.ttf);
+}
+
+body{
+    max-width: 300px;
+    max-height: 600px;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+	background-color: #1f1f1f;
+
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+#clickTag1{
+	height: 100%;
+}
+
+.background-wrapper{
+	display: flex;
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	width: 221px;
+	bottom: 0;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+
+	.background-image{
+		align-self: center;
+		height: auto;
+		width: 300px;
+		transition: 0.5s ease-out;
+		z-index: 1;
+		position: absolute;
+		left: -336px;
+		top: 0;
+	}
+
+	.background-image-alt{
+		align-self: center;
+		height: 100%;
+		transition: 0.5s ease-out;
+		z-index: 3;
+		position: absolute;
+		left: -336px;
+	}
+
+	.background-shape{
+		right: -336px;
+		z-index: 2;
+		transition: 0.5s ease-out;
+		position: absolute;
+	}
+
+	.background-shape-alt{
+		right: -336px;
+		z-index: 2;
+		transition: 0.5s ease-out;
+		position: absolute;
+	}
+}
+
+.background-layer{
+	background-color: $bgAlt;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	z-index: 1;
+	left: 336px;
+	transition: 0.5s ease-out;
+}
+
+ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	margin-top: 15px;
+	padding-left: 25px;
+	transition: 0.5s ease-out;
+	left: 336px;
+	position: relative;
+
+	li{
+		font-family: $defaultFont;
+		font-size: 28px;
+		color: white;
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		font-weight: 500;
+		font-style: normal;
+		display: flex;
+		margin-bottom: 25px;
+
+		&::before{
+			content: '';
+			width: 0;
+			height: 0;	
+			margin-top: 7px;
+			display: block;
+			margin-right: 25px;
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+			border-left: 18px solid $thirdColor;
+		}
+	}
+}
+
+.logo{
+	display: flex;
+	position: relative;
+	transition: 0.5s ease-out;
+	left: 336px;
+	justify-content: center;
+
+	.logo-alt-wrapper{
+		width: 100%;
+		display: flex;
+		position: absolute;
+		justify-content: center;
+		align-items: center;
+		transition: 0.5s ease-out;
+	}
+
+	.logo-alt{
+		justify-self: center;
+		align-self: center;
+		margin: 0 auto;
+		margin-bottom: 5px;
+		position: relative;
+		left: 336px;
+		transition: 0.5s ease-out;
+	}
+
+	.logo-main{
+		transition: 0.5s ease-out;
+	}
+}
+
+.product{
+	transition: 0.5s ease-out;
+	position: relative;
+	left: 336px;
+	top: 0;
+	z-index: 5;
+	width: 100px;
+
+	.product-wrapper{
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: 0.5s ease-out;
+	}
+
+	img{
+		width: 100%;
+		display: flex;
+		transition: 0.5s ease-out;
+	}
+
+	&::before{
+		content: 'nu 1+1 gratis!';
+		border-radius: 50%;
+		width: 100px;
+		height: 75px;
+		background-color: $thirdColor;
+		color: white;
+		display: flex;
+		z-index: 9;
+		position: absolute;
+		font-size: 20px;
+		font-family: $defaultFont;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		transform: rotate(-10deg);
+		bottom: 125px;
+		left: -80px;
+		opacity: 0;
+		transition: 0.5s ease-out;
+	}
+}
+
+#banner{
+	display: flex;
+	box-sizing: border-box;
+	height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+	background-color: $bg;
+
+	.wrapper{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		z-index: 4;
+
+		.content{
+			padding: 15px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+	}
+
+	#text{
+		position: relative;
+		z-index: 9;
+		transition: 0.5s ease-out;
+		width: 100%;
+		height: 0;
+
+		p{
+			color: $firstColor;
+			font-size: 32px;
+			font-family: $defaultFont;
+			position: relative;
+			transition: 0.5s ease-out;
+
+			&.text-1{
+				text-align: center;
+				left: 336px;
+				height: 0;
+				margin: 0;
+				padding: 0;
+				font-weight: 700;
+			}
+
+			&.text-2{
+				top: 336px;
+			}
+		}
+
+		h2{
+			margin: 0;
+			padding: 0;
+			color: $thirdColor;
+			text-transform: uppercase;
+			font-family: $defaultFont;
+			font-size: 22px;
+			text-align: center;
+			transition: 0.5s ease-out;
+
+			&.header-2{
+				height: 0;
+				left: 336px;
+				position: relative;
+			}
+		}
+	}
+
+	.call-to-action{
+		position: relative;
+		left: 336px;
+		transition: 0.5s ease-out;
+		z-index: 7;
+		justify-content: center;
+		display: flex;
+		top: 350px;
+
+		button{
+			border: none;
+			transition: 0.5s ease-out;
+			color: white;
+			border-radius: 28px;
+			background-color: $thirdColor;
+			font-size: 28px;
+			padding: 5px 20px;
+			cursor: pointer;
+			font-family: $defaultFont;
+
+			&:hover{
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	&.stage-1{
+		.logo{
+			left: 0;
+		}
+
+		.text-1{
+			left: 0 !important;
+		}
+
+		.background-image{
+			left: 0;
+		}
+	}
+
+	&.stage-2{
+		.background-layer{
+			left: 0;
+		}
+		
+		#text {
+			p{
+				color: white;
+			}
+
+			.header-2{
+				left: 0;
+				height: auto;
+				margin-bottom: 50px;
+				margin-top: 50px;
+			}
+		}
+
+		.list-2{
+			left: 0;
+		}
+
+		.logo{
+			left: 0;
+			height: 60px;
+			width: 100%;
+
+			.logo-alt{
+				left: 0;
+			}
+		}
+
+		.wrapper{
+			padding-left: 0;
+		}
+
+		.background-shape{
+			right:0;
+		}
+
+		.logo-main{
+			display: none;
+		}
+
+		.logo-alt{
+			display: block;
+		}
+
+		.call-to-action{
+			left: 0;
+			top: 250px;
+		}
+	}
+
+	&.stage-3{
+
+		.background-layer{
+			left: 0;
+		}
+
+		#text {
+			.text-1{
+				left: 336px;
+				height: 0;
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		.product{
+			left: 160px;
+			top: 170px;
+			width: 100px;
+		}
+
+		.wrapper{
+			padding-left: 0;
+		}
+
+		.background-image-alt{
+			left: -20px;
+			z-index: 3;
+		}
+
+		.background-shape-alt{
+			position: absolute;
+			right: 0;
+			left: auto;
+			height: 100%;
+		}
+
+		.logo-main{
+			display: none;
+		}
+
+		.logo-alt{
+			display: block;
+			left: 0;
+		}
+
+		.logo{
+			left: 0;
+		}
+
+		.call-to-action{
+			left: auto;
+			top: 325px;
+		}
+	}
+
+	&.stage-4{
+		.background-layer{
+			left: 0;
+		}
+
+
+		#text {
+			.text-1{
+				left: 336px;
+				height: 0;
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		.product{
+			left: 160px;
+			top: 175px;
+			width: 100px;
+
+			&::before{
+				opacity: 1;
+			}
+		}
+
+		.wrapper{
+			padding-left: 0;
+		}
+
+		.background-image-alt{
+			left: -20px;
+		}
+
+		.background-shape-alt{
+			position: absolute;
+			right: 0;
+			left: auto;
+			height: 100%;
+		}
+
+		.logo-main{
+			display: none;
+		}
+
+		.logo-alt{
+			display: block;
+			left: 0;
+		}
+
+		.logo{
+			left: 0;
+		}
+
+		.call-to-action{
+			left: auto;
+			top: 325px;
+		}
+	}
+
+}

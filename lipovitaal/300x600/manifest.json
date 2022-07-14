@@ -1,0 +1,19 @@
+{
+    "version": "1.0", 
+
+    "title": "300x600 LipoVitaal", 
+
+    "width" : "300", 
+    "height": "600", 
+
+    "events": {
+        "enabled": 0, 
+        "list": {}
+    },
+
+    "clicktags": {
+        "clickTAG": "https://www.vitalfarma.eu/"
+    },
+
+    "source": "index.html"
+}

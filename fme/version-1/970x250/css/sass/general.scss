@@ -1,0 +1,326 @@
+@font-face {
+	font-family: quantico-regular;
+	src: url(font/Quantico-Regular.ttf);
+}
+
+body{
+    max-width: 970px;
+    max-height: 250px;
+    width: 970px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.background-image{
+	transition: 3s linear;
+	z-index: -1;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+	img{
+		width: 100%;
+	}
+}
+
+.shape{
+    height: 100%;
+    position: absolute;
+}
+
+.arrow{
+    width: 280px;
+    height: 100%;
+    position: absolute;
+    left: -280px;
+    
+	
+	width: 0; 
+	height: 0; 
+	border-top: 125px solid transparent;
+	border-bottom: 125px solid transparent;
+
+	&.arrow-one{
+		border-left: 80px solid $firstColor;
+		transition: 0.5s ease-out;
+
+		&::before{
+			width: 200px;
+			height: 280px;
+			top: -140px;
+			left: -280px;
+			position: relative;
+			background-color: $firstColor;
+			display: block;
+			content: "";
+		}
+	}
+
+	&.arrow-two{
+		border-left: 80px solid $secondColor;
+		transition: 0.7s ease-out;
+		
+		&::before{
+			width: 300px;
+			height: 280px;
+			top: -140px;
+			left: -380px;
+			position: relative;
+			background-color: $secondColor;
+			display: block;
+			content: "";
+		}
+	}
+}
+
+.background-wrapper{
+	display: flex;
+	width: 100%;
+	max-width: 100%;
+
+	.background-image{
+		align-self: center;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+#banner{
+
+	display: flex;
+
+	#text{
+		position: absolute;
+		z-index: 9;
+		left: 37px;
+		transition: 0.5s ease-out;
+		width: 100%;
+		display: flex;
+		height: 100%;
+
+		.text{
+			align-items: center;
+			color: white;
+			font-size: 52px;
+			font-family: quantico-regular;
+			position: absolute;
+			transition: 0.5s ease-out;
+			left: -728px;
+			line-height: 52px;
+			max-width: 100%;
+			width: 400px;
+			margin: 0;
+			margin-top: 30px;
+		}
+
+		.text-1{
+			line-height: 52px;
+			width: 375px;
+		}
+	}
+
+	.logos{
+		position: absolute;
+		bottom: -75px;
+		left: 40px;
+		transition: 0.6s ease-out;
+		z-index: 9;
+		width: 250px;
+		height: 27px;
+
+		p{
+			color: white;
+			padding: 0;
+			margin: 0;
+			font-family: quantico-regular;
+		}
+	}
+
+	.call-to-action{
+		position: absolute;
+		bottom: -75px;
+		left: 37px;
+		transition: 0.3s ease-out;
+		z-index: 9;
+
+		button{
+			transition: 0.5s;
+			border: 2px solid white;
+			color: white;
+			border-radius: 28px;
+			background-color: rgba($color: #000000, $alpha: 0.0);
+			font-size: 18px;
+			padding: 8px 20px;
+			cursor: pointer;
+			font-family: quantico-regular;
+
+			&:hover{
+				background-color: white;
+				color: $secondColor;
+			}
+		}
+	}
+
+	&.stage-2{
+
+		.logos{
+			bottom: 25px;
+		}
+
+		.arrow-one{
+			left: 375px;
+		}
+
+		.arrow-two{
+			left: 285px;
+		}
+
+
+		.background-image{
+			transform: scale(1.05);
+		}
+	}
+
+	&.stage-3{
+
+		#text{
+
+			.text-1{
+				left: 0
+			}
+		}
+
+		.logos{
+			bottom: 25px;
+		}
+
+		.arrow-one{
+			left: 375px;
+		}
+
+		.arrow-two{
+			left: 285px;
+		}
+
+		.background-image{
+			transform: scale(1.1);
+		}
+	}
+
+	&.stage-4{
+
+		#text{
+
+			.text-2{
+				left: 0
+			}
+
+		}
+
+		.call-to-action{
+			bottom: 25;
+		}
+
+		.logos{
+			bottom: -75px;
+		}
+
+		.arrow-one{
+			left: 375px;
+		}
+
+		.arrow-two{
+			left: 285px;
+		}
+
+		.logos{
+			bottom: -75px;
+		}
+
+		.background-image{
+			transform: scale(1.1);
+		}
+	}
+
+	&.stage-5{
+
+		#text{
+
+			.text-2{
+				//left: 586px
+				left: -450px;
+			}
+
+		}
+
+		.call-to-action{
+			bottom: -75px;
+		}
+
+		.arrow-one{
+			//left: 586px;
+			left: -450px;
+		}
+
+		.arrow-two{
+			//left: 536px;
+			left: -450px;
+			
+		}
+
+		.logos{
+			bottom: -75px;
+		}
+
+		.background-image{
+			transform: scale(1.00);
+		}
+	}
+
+	&.stage-6{
+
+		#text{
+
+			.text-2{
+				left: -450px;
+				transition: 0s;
+			}
+
+		}
+
+		.call-to-action{
+			bottom: -75px;
+		}
+
+		.arrow-one{
+			left: -450px;
+			transition: 0s;
+		}
+
+		.arrow-two{
+			left: -450px;
+			transition: 0s;
+			
+		}
+
+		.logos{
+			bottom: -75px;
+		}
+
+		.background-image{
+			transform: scale(1.00);
+		}
+	}
+
+}

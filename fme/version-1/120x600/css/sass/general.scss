@@ -1,0 +1,167 @@
+@font-face {
+	font-family: quantico-regular;
+	src: url(font/Quantico-Regular.ttf);
+}
+
+body{
+    max-width: 120px;
+    max-height: 600px;
+    width: 120px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.background{
+	height: 414px;
+	width: 100%;
+	z-index: 2;
+	background-image: url('../img/bg-120x600.png');
+	position: absolute;
+	bottom: 0;
+}
+
+.background-image{
+	transition: 3s linear;
+	z-index: -1;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+	img{
+		width: 100%;
+	}
+}
+
+.shape{
+    height: 100%;
+    position: absolute;
+}
+
+.background-wrapper{
+	display: flex;
+	position: relative;
+
+	.background-image{
+		align-self: center;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+#banner{
+	display: flex;
+	flex-direction: column;
+
+	#text{
+		position: absolute;
+		z-index: 9;
+		left: 10px;
+		transition: 0.5s ease-out;
+		width: 100%;
+		
+
+		.text{
+			color: white;
+			font-size: 25px;
+			font-family: quantico-regular;
+			position: absolute;
+			transition: 0.5s ease-out;
+			left: -336px;
+			line-height: 30px;
+			max-width: 100%;
+			width: 100%;
+			margin: 0;
+			margin-top: 40px;
+		}
+
+		.text-1{
+			line-height: 30px;
+			width: calc(100% - 20px);
+			left: 0;
+		}
+	}
+
+	.logos{
+		position: absolute;
+		//bottom: -75px;
+		bottom: 25px;
+		transition: 0.6s;
+		z-index: 9;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		p{
+			color: white;
+			padding: 0;
+			margin: 0;
+			font-family: quantico-regular;
+		}
+
+		img{
+			max-width: 85%;
+			display: flex;
+		}
+	}
+
+	.call-to-action{
+		position: absolute;
+		left: -336px;
+		bottom: 120px;
+		width: 100%;
+		transition: 0.5s ease-out;
+		z-index: 9;
+		display: flex;
+		justify-content: center;
+
+		button{
+			transition: 0.5s;
+			border: 2px solid white;
+			color: white;
+			border-radius: 28px;
+			background-color: rgba($color: #000000, $alpha: 0.0);
+			font-size: 15px;
+			padding: 5px 10px;
+			cursor: pointer;
+			font-family: quantico-regular;
+
+			&:hover{
+				background-color: white;
+				color: $secondColor;
+			}
+		}
+	}
+
+	&.stage-2{
+
+		.call-to-action{
+			left: 0;
+		}
+
+		.background-image{
+			transform: scale(1.05);
+		}
+
+		#text{
+
+			.text-1{
+				left: 336px;
+			}
+
+			.text-2{
+				left: 0
+			}
+		}
+	}
+}
