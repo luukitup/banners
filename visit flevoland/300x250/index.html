@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>LipoVitaal</title>
+        <script>
+            document.write('<script src="'+ (window.API_URL || 'https://s1.adform.net/banners/scripts/rmb/Adform.DHTML.js?bv='+ Math.random()) +'"><\/script>');
+        </script>
+        <link rel="stylesheet" href="https://use.typekit.net/hfu4maz.css">
+        <link rel="stylesheet" href="css/compiled.css">
+    </head>
+    <body>
+        <div id="clickTag1">
+            <main id="banner" class="stage-1">
+                <div class="absolute w-full h-full">
+                    <div class="background-wrapper w-full h-full">
+                        <img src="img/g_300x250.png" class="w-full h-full graphic">
+                        <div class="background-image"><img src="img/image-1.jpg"></div>
+                    </div>
+                </div>
+
+                <!-- Slide 1 -->
+                <div class="slide slide-1 absolute">
+                    <div class="content">
+                        <div class="relative w-full h-full flex flex-col">
+                            <div class="logo"><img src="img/logo.svg"></div>
+                            <div class="text">
+                                <p>Zin in (onverwacht) avontuur?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide slide-2 absolute">
+                    <div class="content">
+                        <div class="relative w-full h-full flex flex-col">
+                            <div class="text">
+                                <p>Ga op kanosafari in <br>het Hollandse Hout</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide slide-3 absolute">
+                    <div class="content">
+                        <div class="relative w-full h-full flex flex-col">
+                            <div class="call-to-action">
+                                <button>Boek nu je arrangement</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div id="currentStage"></div>
+        <button id="next">Next slide</button>
+        <script src="script.js"></script>
+    </body>
+</html>
