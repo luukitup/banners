@@ -1,10 +1,10 @@
 {
     "version": "1.0", 
 
-    "title": "300x250 Visit Flevoland", 
+    "title": "Visit Flevoland", 
 
-    "width" : "300", 
-    "height": "250", 
+    "width" : "336", 
+    "height": "280", 
 
     "events": {
         "enabled": 0, 

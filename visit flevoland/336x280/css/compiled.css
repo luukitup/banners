@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
 body {
-  max-width: 300px;
-  max-height: 250px;
-  width: 300px;
-  height: 250px;
+  max-width: 336px;
+  max-height: 280px;
+  width: 336px;
+  height: 280px;
   overflow: hidden;
   position: relative;
   margin: 0;
@@ -79,7 +79,7 @@ body:hover {
 }
 
 .slide-2 .logo {
-  top: 250px;
+  top: 280px;
   position: relative;
 }
 
@@ -92,6 +92,8 @@ body:hover {
   display: flex;
   height: 100%;
   margin-top: auto;
+  left: -336px;
+  display: none !important;
 }
 .call-to-action button {
   border: none;
@@ -116,15 +118,15 @@ body:hover {
 }
 
 .slide-1 {
-  left: -300px;
+  left: -336px;
 }
 .slide-1 p {
-  left: -300px;
+  left: -336px;
   transition: 0.6s ease-out;
 }
 
 .slide-2 {
-  left: 300px;
+  left: 336px;
 }
 .slide-2 .content .text {
   margin-top: auto;
@@ -134,7 +136,7 @@ body:hover {
 }
 
 .slide-3 {
-  left: 300px;
+  left: 336px;
 }
 
 #banner {

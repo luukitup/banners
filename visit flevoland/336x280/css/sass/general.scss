@@ -6,10 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 
 body{
-    max-width: 300px;
-    max-height: 250px;
-    width: 300px;
-    height: 250px;
+    max-width: $width;
+    max-height: $height;
+    width: $width;
+    height: $height;
     overflow: hidden;
     position: relative;
     margin: 0;
@@ -92,7 +92,7 @@ body{
 
 .slide-2{
 	.logo{
-		top: 250px;
+		top: $height;
 		position: relative;
 	}
 }
@@ -132,16 +132,16 @@ body{
 }
 
 .slide-1{
-	left: -300px;
+	left: -$width;
 
 	p{
-		left: -300px;
+		left: -$width;
 		transition: 0.6s ease-out;
 	}
 }
 
 .slide-2{
-	left: 300px;
+	left: $width;
 
 	.content{
 
@@ -156,7 +156,7 @@ body{
 }
 
 .slide-3{
-	left: 300px;
+	left: $width;
 }
 
 #banner{
