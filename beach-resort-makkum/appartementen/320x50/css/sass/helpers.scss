@@ -1,0 +1,60 @@
+
+.relative{
+	position: relative;
+}
+
+.w-full{
+	width: 100%;
+}
+
+.h-full{
+	height: 100%;
+}
+
+.flex{
+	display: flex;
+}
+
+.flex-col{
+	flex-direction: column;
+}
+
+.slide{
+	width: 100%;
+	height: 100%;
+}
+
+.grid{
+	width: 100%;
+	display: grid;
+	height: 100%;
+}
+
+.grid-item{
+	position: relative;
+	transition: 0.5s ease-out;
+}
+
+.absolute{
+	position: absolute;
+}
+
+.bg-first{
+	background-color: $firstColor;
+}
+
+.bg-second{
+	background-color: $secondColor;
+}
+
+.color-first{
+	color: $firstColor;
+}
+
+.color-second{
+	color: $secondColor;
+}
+
+.p-15{
+	padding: 15px;
+}
