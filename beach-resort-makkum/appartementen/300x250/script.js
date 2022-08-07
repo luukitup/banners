@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
 
 var clickArea = document.getElementById('clickTag1');
 
-var clickTAGvalue = dhtml.getVar('clickTAG', 'https://www.visitflevoland.nl/nl/deals/3127565776/waterrijk-nieuw-land?utm_medium=display&utm_source=banner&utm_campaign=npnl&utm_content=kano');
+var clickTAGvalue = dhtml.getVar('clickTAG', '#');
 var landingpagetarget = dhtml.getVar('landingPageTarget', '_blank');
 
 clickArea.onclick = function() {
