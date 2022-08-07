@@ -35,6 +35,7 @@
 	width: 100%;
 	display: grid;
 	height: 100%;
+	grid-template-rows: 63px 1fr 97px;
 }
 
 .grid-item{

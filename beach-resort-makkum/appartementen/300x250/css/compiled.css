@@ -116,7 +116,7 @@ ul {
 }
 ul li {
   font-size: 20px;
-  font-family: baskerville, sans-serif;
+  font-family: baskerville;
   list-style-image: url("../img/check.png");
   margin: 10px 0;
   padding-right: 15px;
@@ -139,8 +139,7 @@ ul li {
   font-size: 15px;
   padding: 10px 15px;
   cursor: pointer;
-  font-family: baskerville, sans-serif;
-  text-transform: uppercase;
+  font-family: baskerville;
   letter-spacing: 0.5px;
 }
 .call-to-action button:hover {

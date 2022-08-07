@@ -136,7 +136,7 @@ ul{
 
 	li{
 		font-size: 21px;
-		font-family: $defaultFont;
+		font-family: baskerville;
 		list-style-image: url('../img/check.png');
 		margin: 10px 0;
 		padding-right: 15px;
@@ -163,8 +163,7 @@ ul{
 		font-size: 15px;
 		padding: 10px 15px;
 		cursor: pointer;
-		font-family: $defaultFont;
-		text-transform: uppercase;
+		font-family: baskerville;
 		letter-spacing: 0.5px;
 
 		&:hover{
