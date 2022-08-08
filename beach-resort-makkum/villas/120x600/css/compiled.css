@@ -147,14 +147,14 @@ ul li {
   transition: 0.6s ease-out;
 }
 .slide-1 .grid {
-  grid-template-rows: 123px 1fr 179px;
+  grid-template-rows: 104px 1fr 179px;
 }
 
 .slide-2 {
   left: 120px;
 }
 .slide-2 .grid {
-  grid-template-rows: 123px 1fr;
+  grid-template-rows: 104px 1fr;
 }
 .slide-2 p {
   padding: 10px;
@@ -186,7 +186,7 @@ ul li {
   align-items: center;
 }
 .slide-3 .grid {
-  grid-template-rows: 123px 1fr;
+  grid-template-rows: 104px 1fr;
 }
 .slide-3 p {
   font-family: baskerville, sans-serif;

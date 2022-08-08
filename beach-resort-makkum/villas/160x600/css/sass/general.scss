@@ -97,8 +97,8 @@ p{
 	p{
 		padding: 5px;
 		margin: 0;
-		font-family: $defaultFont;
-		font-size: 20px;
+		font-family: baskerville;
+		font-size: 24px;
 	}
 }
 
@@ -170,7 +170,7 @@ ul{
 	}
 
 	.grid{
-		grid-template-rows: 168px 1fr 123px;
+		grid-template-rows: 104px 1fr 185px;
 	}
 }
 
@@ -178,7 +178,7 @@ ul{
 	left: $w;
 
 	.grid{
-		grid-template-rows: 168px 1fr;
+		grid-template-rows: 104px 1fr;
 	}
 
 	p{
@@ -219,7 +219,7 @@ ul{
 	align-items: center;
 
 	.grid{
-		grid-template-rows: 168px 1fr;
+		grid-template-rows: 104px 1fr;
 	}
 
 	p{
@@ -296,27 +296,8 @@ ul{
 	}
 
 	&.stage-5{
-		.slide-2{
-			left: 0;
-
-			.text{
-				.p-1{
-					left: -$w;
-				}
-
-				.p-2{
-					left: -$w;
-				}
-
-				.p-3{
-					left: 0;
-				}
-			}
-		}
-	}
-
-	&.stage-6{
 		.slide-3{
+			left: 0;
 
 			.grid-item{
 				top: 0;
@@ -328,12 +309,6 @@ ul{
 
 				
 			}
-		}
-	}
-
-	&.stage-6{
-		.slide-3{
-			left: 0;
 		}
 	}
 }

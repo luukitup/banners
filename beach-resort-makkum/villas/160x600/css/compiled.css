@@ -85,8 +85,8 @@ p {
 .bottom p {
   padding: 5px;
   margin: 0;
-  font-family: baskerville, sans-serif;
-  font-size: 20px;
+  font-family: baskerville;
+  font-size: 24px;
 }
 
 ul {
@@ -147,14 +147,14 @@ ul li {
   transition: 0.6s ease-out;
 }
 .slide-1 .grid {
-  grid-template-rows: 168px 1fr 123px;
+  grid-template-rows: 104px 1fr 185px;
 }
 
 .slide-2 {
   left: 160px;
 }
 .slide-2 .grid {
-  grid-template-rows: 168px 1fr;
+  grid-template-rows: 104px 1fr;
 }
 .slide-2 p {
   padding: 20px;
@@ -193,7 +193,7 @@ ul li {
   align-items: center;
 }
 .slide-3 .grid {
-  grid-template-rows: 168px 1fr;
+  grid-template-rows: 104px 1fr;
 }
 .slide-3 p {
   font-family: baskerville, sans-serif;
@@ -244,27 +244,15 @@ ul li {
 #banner.stage-4 .slide-2 .text .p-3 {
   left: 160px;
 }
-#banner.stage-5 .slide-2 {
+#banner.stage-5 .slide-3 {
   left: 0;
 }
-#banner.stage-5 .slide-2 .text .p-1 {
-  left: -160px;
-}
-#banner.stage-5 .slide-2 .text .p-2 {
-  left: -160px;
-}
-#banner.stage-5 .slide-2 .text .p-3 {
-  left: 0;
-}
-#banner.stage-6 .slide-3 .grid-item {
+#banner.stage-5 .slide-3 .grid-item {
   top: 0;
 }
-#banner.stage-6 .slide-3 .grid-item .logo {
+#banner.stage-5 .slide-3 .grid-item .logo {
   top: 0;
   z-index: 5;
-}
-#banner.stage-6 .slide-3 {
-  left: 0;
 }
 
 .relative {
