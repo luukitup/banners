@@ -1,10 +1,10 @@
 window.addEventListener('load', function () {
     
     var currentStage = 1;
-    var amountOfStages = 6;
+    var amountOfStages = 5;
 
     // Skips the first slide
-    var timePerSlide =  [0, 2000, 2000, 1500, 1500, 3000, 3000]
+    var timePerSlide =  [0, 2000, 2000, 2000, 3000, 3000]
     var element = document.querySelector('#banner');
 
     var next = document.querySelector('#next');
