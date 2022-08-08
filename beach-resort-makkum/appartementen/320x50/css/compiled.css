@@ -27,6 +27,7 @@ p {
   height: 100%;
   width: 100%;
   justify-content: center;
+  line-height: 14pt;
 }
 
 #clickTag1 {
@@ -127,7 +128,7 @@ ul li {
   border-radius: 28px;
   background-color: #2f4550;
   font-size: 18px;
-  padding: 10px 15px;
+  padding: 6px 15px;
   cursor: pointer;
   font-family: baskerville;
   letter-spacing: 0.5px;

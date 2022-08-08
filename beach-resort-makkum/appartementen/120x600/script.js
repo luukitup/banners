@@ -4,7 +4,7 @@ window.addEventListener('load', function () {
     var amountOfStages = 6; 
 
     // Skips the first slide
-    var timePerSlide =  [0, 500, 2500, 1500, 1500, 1500, 2500]
+    var timePerSlide =  [0, 500, 2500, 1500, 1500, 3000, 3000]
     var element = document.querySelector('#banner');
 
     var next = document.querySelector('#next');
@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
 
 var clickArea = document.getElementById('clickTag1');
 
-var clickTAGvalue = dhtml.getVar('clickTAG', '#');
+var clickTAGvalue = dhtml.getVar('clickTAG', 'https://www.residencemakkum.nl/?utm_medium=display&utm_source=banner&utm_campaign=beach-resort-makkum&utm_content=appartement');
 var landingpagetarget = dhtml.getVar('landingPageTarget', '_blank');
 
 clickArea.onclick = function() {
