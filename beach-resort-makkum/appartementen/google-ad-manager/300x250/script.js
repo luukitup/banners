@@ -48,12 +48,3 @@ window.addEventListener('load', function () {
     }
     
 })
-
-var clickArea = document.getElementById('clickTag1');
-
-var clickTAGvalue = dhtml.getVar('clickTAG', 'https://www.residencemakkum.nl/?utm_medium=display&utm_source=banner&utm_campaign=beach-resort-makkum&utm_content=appartement');
-var landingpagetarget = dhtml.getVar('landingPageTarget', '_blank');
-
-clickArea.onclick = function() {
-    window.open(clickTAGvalue,landingpagetarget);
-}   
