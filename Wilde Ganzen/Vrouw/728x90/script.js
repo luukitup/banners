@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
 
 var clickArea = document.getElementById('clickTag1');
 
-var clickTAGvalue = dhtml.getVar('clickTAG', 'https://www.wildeganzen.nl/');
+var clickTAGvalue = dhtml.getVar('clickTAG', 'https://www.wildeganzen.nl/help-mee/donateurs-in-beeld-o-a?utm_source=display&utm_medium=cpc&utm_campaign=donateursinbeeld&utm_content=annekaren_BANNERIMAGEhelp-mee/donateurs-in-beeld-o-a?utm_source=display&utm_medium=cpc&utm_campaign=donateursinbeeld&utm_content=annekaren_BANNERIMAGE');
 var landingpagetarget = dhtml.getVar('landingPageTarget', '_blank');
 
 clickArea.onclick = function() {
