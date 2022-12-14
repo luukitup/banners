@@ -1,0 +1,20 @@
+{
+    "version": "1.0", 
+
+    "title": "120x600 Wilde Ganzen - Man", 
+
+    "width" : "120", 
+    "height": "600", 
+
+    "events": {
+        "enabled": 0, 
+        "list": {}
+    },
+
+    "clicktags": {
+        "clickTAG": "
+https://www.wildeganzen.nl/help-mee/donateurs-in-beeld-o-m?utm_source=display&utm_medium=cpc&utm_campaign=donateursinbeeld&utm_content=martijn_BANNERIMAGE"
+    },
+
+    "source": "index.html"
+}

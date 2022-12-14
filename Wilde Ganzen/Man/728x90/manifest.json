@@ -1,0 +1,20 @@
+{
+    "version": "1.0", 
+
+    "title": "728x90 Wilde Ganzen - Man", 
+
+    "width" : "728", 
+    "height": "90", 
+
+    "events": {
+        "enabled": 0, 
+        "list": {}
+    },
+
+    "clicktags": {
+        "clickTAG": "
+https://www.wildeganzen.nl/help-mee/donateurs-in-beeld-o-m?utm_source=display&utm_medium=cpc&utm_campaign=donateursinbeeld&utm_content=martijn_BANNERIMAGEhelp-mee/donateurs-in-beeld-o-a?utm_source=display&utm_medium=cpc&utm_campaign=donateursinbeeld&utm_content=annekaren_BANNERIMAGE"
+    },
+
+    "source": "index.html"
+}
