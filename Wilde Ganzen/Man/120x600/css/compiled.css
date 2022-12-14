@@ -34,16 +34,19 @@ body:hover {
   color: #181a1b;
   z-index: 3;
   flex-grow: 1;
+  position: relative;
   flex-direction: column;
 }
 .top #background-image {
+  bottom: 0;
   width: 100%;
   position: absolute;
   filter: brightness(1.11) contrast(1) saturate(1) hue-rotate(0deg);
 }
 .top .filter {
   width: 100%;
-  height: calc(100% - 115px);
+  height: 100%;
+  bottom: 0;
   position: absolute;
   background-color: black;
   background-image: url("../img/image-1.jpg");
