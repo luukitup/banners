@@ -1,0 +1,19 @@
+{
+    "version": "1.0", 
+
+    "title": "336x280 Wilde Ganzen - Vrouw", 
+
+    "width" : "336", 
+    "height": "280", 
+
+    "events": {
+        "enabled": 0, 
+        "list": {}
+    },
+
+    "clicktags": {
+        "clickTAG": "https://www.wildeganzen.nl/"
+    },
+
+    "source": "index.html"
+}
