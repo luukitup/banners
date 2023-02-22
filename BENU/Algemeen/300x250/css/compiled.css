@@ -8,6 +8,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 body:hover {
   cursor: pointer;
@@ -90,14 +91,6 @@ button {
     transform: scale(1);
   }
 }
-.stage-5 button {
-  animation-name: grow-and-shrink;
-  animation-duration: 350ms;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 3;
-  animation-delay: 500ms;
-}
-
 #intro {
   opacity: 0;
   z-index: 9;
@@ -118,13 +111,26 @@ button {
   overflow: hidden;
 }
 
-@keyframes intro-zoom {
+#logo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+@keyframes big-zoom {
   0% {
     transform: scale(1);
-    opacity: 1;
   }
   100% {
     transform: scale(10);
+  }
+}
+@keyframes fade-animation {
+  0% {
+    opacity: 1;
+  }
+  100% {
     opacity: 0;
   }
 }
@@ -184,15 +190,24 @@ button {
 #banner.stage-1 .slide-1 {
   left: 0;
 }
-#banner.stage-1 #intro {
-  animation-name: intro-zoom;
-  animation-duration: 1250ms;
-  animation-fill-mode: forwards;
-  animation-delay: 750ms;
-  opacity: 1;
+#banner.stage-1 .bg-img:nth-child(1) {
+  left: 0;
+}
+#banner.stage-1 .message-1 {
+  left: 0;
+}
+#banner.stage-1 .slide-2 {
+  display: none;
+}
+#banner.stage-1 .slide-1 {
+  left: 0;
 }
 #banner.stage-1 .bg-img:nth-child(1) {
   left: 0;
+  animation-name: slow-zoom;
+  animation-duration: 3000ms;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 #banner.stage-1 .message-1 {
   left: 0;
@@ -201,6 +216,9 @@ button {
   left: 0;
 }
 #banner.stage-2 .bg-img:nth-child(1) {
+  left: 300px;
+}
+#banner.stage-2 .bg-img:nth-child(2) {
   left: 0;
   animation-name: slow-zoom;
   animation-duration: 3000ms;
@@ -217,6 +235,9 @@ button {
   left: 300px;
 }
 #banner.stage-3 .bg-img:nth-child(2) {
+  left: 300px;
+}
+#banner.stage-3 .bg-img:nth-child(3) {
   left: 0;
   animation-name: slow-zoom;
   animation-duration: 3000ms;
@@ -224,31 +245,40 @@ button {
   animation-fill-mode: forwards;
 }
 #banner.stage-3 .message-1 {
-  left: 0;
-}
-#banner.stage-4 .slide-1 {
-  left: 0;
-}
-#banner.stage-4 .bg-img:nth-child(1) {
-  left: 300px;
-}
-#banner.stage-4 .bg-img:nth-child(2) {
-  left: 300px;
-}
-#banner.stage-4 .bg-img:nth-child(3) {
-  left: 0;
-  animation-name: slow-zoom;
-  animation-duration: 3000ms;
-  animation-delay: 300ms;
-  animation-fill-mode: forwards;
-}
-#banner.stage-4 .message-1 {
   opacity: 0;
 }
-#banner.stage-4 .message-2 {
+#banner.stage-3 .message-2 {
   left: 0;
 }
+#banner.stage-4 .slide-2 {
+  left: 0;
+}
+#banner.stage-4 button {
+  animation-name: grow-and-shrink;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-delay: 500ms;
+}
 #banner.stage-5 .slide-2 {
+  left: 0;
+  animation-name: fade-animation;
+  animation-duration: 625ms;
+  animation-delay: 625ms;
+  animation-fill-mode: forwards;
+}
+#banner.stage-5 #logo-wrapper {
+  animation-name: big-zoom;
+  animation-duration: 1250ms;
+  animation-fill-mode: forwards;
+}
+#banner.stage-5 .slide-1 {
+  left: 0;
+}
+#banner.stage-5 .bg-img:nth-child(1) {
+  left: 0;
+}
+#banner.stage-5 .message-1 {
   left: 0;
 }
 

@@ -14,6 +14,7 @@ body{
     position: relative;
     margin: 0;
     padding: 0;
+	background-color: white;
 
 	&:hover{
 		cursor: pointer;
@@ -100,14 +101,6 @@ button{
 	}
 }
 
-.stage-5 button{
-	animation-name: grow-and-shrink;
-  	animation-duration: 350ms;
-  	animation-fill-mode: forwards;
-	animation-iteration-count: 3;
-	animation-delay: 500ms;
-}
-
 #intro{
 	opacity: 0;
 	z-index: 9;
@@ -129,13 +122,27 @@ button{
 	overflow: hidden;
 }
 
-@keyframes intro-zoom {
+#logo-wrapper{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: white;
+}
+
+@keyframes big-zoom {
 	0% {
 		transform: scale(1);
-		opacity: 1;
 	}
 	100% {
 		transform: scale(10);
+	}
+}
+
+@keyframes fade-animation {
+	0% {
+		opacity: 1;
+	}
+	100% {
 		opacity: 0;
 	}
 }
@@ -201,14 +208,6 @@ button{
 			left: 0;
 		}
 
-		#intro{
-			animation-name: intro-zoom;
-			animation-duration: 1250ms;
-			animation-fill-mode: forwards;
-			animation-delay: 750ms;
-			opacity: 1;
-		}
-
 		.bg-img:nth-child(1){
 			left: 0;
 		}
@@ -217,9 +216,13 @@ button{
 			left: 0;
 		}
 
-	}+
+		.slide-2{
+			display: none;
+		}
 
-	&.stage-2{
+	}
+
+	&.stage-1{
 		.slide-1{
 			left: 0;
 		}
@@ -237,7 +240,7 @@ button{
 		}
 	}
 
-	&.stage-3{
+	&.stage-2{
 		.slide-1{
 			left: 0;
 		}
@@ -259,7 +262,7 @@ button{
 		}
 	}
 
-	&.stage-4{
+	&.stage-3{
 		.slide-1{
 			left: 0;
 		}
@@ -289,8 +292,44 @@ button{
 		}
 	}
 
+	&.stage-4{
+		.slide-2{
+			left: 0;
+		}
+
+		button{
+			animation-name: grow-and-shrink;
+			animation-duration: 350ms;
+			animation-fill-mode: forwards;
+			animation-iteration-count: 3;
+			animation-delay: 500ms;
+		}
+	}
+
 	&.stage-5{
 		.slide-2{
+			left: 0;
+			animation-name: fade-animation;
+			animation-duration: 625ms;
+			animation-delay: 625ms;
+			animation-fill-mode: forwards;
+		}
+
+		#logo-wrapper{
+			animation-name: big-zoom;
+			animation-duration: 1250ms;
+			animation-fill-mode: forwards;
+		}
+
+		.slide-1{
+			left: 0;
+		}
+
+		.bg-img:nth-child(1){
+			left: 0;
+		}
+
+		.message-1{
 			left: 0;
 		}
 	}
