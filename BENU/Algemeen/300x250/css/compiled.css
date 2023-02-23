@@ -85,7 +85,7 @@ button {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   100% {
     transform: scale(1);
@@ -260,10 +260,10 @@ button {
 }
 #banner.stage-4 button {
   animation-name: grow-and-shrink;
-  animation-duration: 350ms;
+  animation-duration: 500ms;
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
-  animation-delay: 500ms;
+  animation-delay: 800ms;
 }
 #banner.stage-5 .slide-1 {
   display: none;
