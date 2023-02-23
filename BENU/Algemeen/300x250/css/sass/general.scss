@@ -34,10 +34,10 @@ body{
 	left: 0;
 
 	.bg-img{
-		transition: 0.3s;
+		transition: 0.5s ease-out;
 		position: absolute;
 		top: 0;
-		left: -$w;
+		left: $w;
 	}
 }
 
@@ -152,7 +152,7 @@ button{
 		transform: scale(1);
 	}
 	100% {
-		transform: scale(1.1);
+		transform: scale(1.04);
 	}
 }
 
@@ -166,7 +166,7 @@ button{
   }
 
 .slide{
-	transition: 0.3s;
+	transition: 0.6s ease-out;
 	width: 100%;
 	height: 100%;
 	left: $w;
@@ -208,23 +208,8 @@ button{
 			left: 0;
 		}
 
-		.bg-img:nth-child(1){
-			left: 0;
-		}
-
-		.message-1{
-			left: 0;
-		}
-
 		.slide-2{
 			display: none;
-		}
-
-	}
-
-	&.stage-1{
-		.slide-1{
-			left: 0;
 		}
 
 		.bg-img:nth-child(1){
@@ -246,7 +231,7 @@ button{
 		}
 
 		.bg-img:nth-child(1){
-			left: $w;
+			left: -$w;
 		}
 
 		.bg-img:nth-child(2){
@@ -268,11 +253,11 @@ button{
 		}
 
 		.bg-img:nth-child(1){
-			left: $w;
+			left: -$w;
 		}
 
 		.bg-img:nth-child(2){
-			left: $w;
+			left: -$w;
 		}
 
 		.bg-img:nth-child(3){
@@ -293,6 +278,24 @@ button{
 	}
 
 	&.stage-4{
+		.slide-1{
+			opacity: 0;
+			left: 0;
+		}
+
+		.bg-img:nth-child(1){
+			left: -$w;
+		}
+
+		.bg-img:nth-child(2){
+			left: -$w;
+		}
+
+		.bg-img:nth-child(3){
+			left: 0;
+			transform: scale(1.04);
+		}
+
 		.slide-2{
 			left: 0;
 		}
@@ -307,26 +310,43 @@ button{
 	}
 
 	&.stage-5{
+		.slide-1{
+			display: none;
+		}
+
+		.bg-img:nth-child(1){
+			display: none;
+		}
+
+		.bg-img:nth-child(2){
+			display: none;
+		}
+
+		.bg-img:nth-child(3){
+			display: none;
+		}
+
 		.slide-2{
 			left: 0;
-			animation-name: fade-animation;
-			animation-duration: 625ms;
-			animation-delay: 625ms;
-			animation-fill-mode: forwards;
 		}
+	}
 
-		#logo-wrapper{
-			animation-name: big-zoom;
-			animation-duration: 1250ms;
-			animation-fill-mode: forwards;
-		}
-
+	&.stage-6{
 		.slide-1{
+			left: 0;
+		}
+
+		.slide-2{
+			opacity: 0; 
 			left: 0;
 		}
 
 		.bg-img:nth-child(1){
 			left: 0;
+			animation-name: slow-zoom;
+			animation-duration: 3000ms;
+			animation-delay: 300ms;
+			animation-fill-mode: forwards;
 		}
 
 		.message-1{
