@@ -34,10 +34,11 @@ body{
 	left: 0;
 
 	.bg-img{
-		transition: 0.5s ease-out;
+		transition: 0.9s ease-out;
 		position: absolute;
 		top: 0;
-		left: $w;
+		opacity: 0;
+		left: 0 !important;
 	}
 }
 
@@ -213,7 +214,7 @@ button{
 		}
 
 		.bg-img:nth-child(1){
-			left: 0;
+			opacity: 1;
 			animation-name: slow-zoom;
 			animation-duration: 3000ms;
 			animation-delay: 300ms;
@@ -232,10 +233,11 @@ button{
 
 		.bg-img:nth-child(1){
 			left: -$w;
+			transform: scale(1.04);
 		}
 
 		.bg-img:nth-child(2){
-			left: 0;
+			opacity: 1;
 			animation-name: slow-zoom;
 			animation-duration: 3000ms;
 			animation-delay: 300ms;
@@ -258,10 +260,11 @@ button{
 
 		.bg-img:nth-child(2){
 			left: -$w;
+			transform: scale(1.04);
 		}
 
 		.bg-img:nth-child(3){
-			left: 0;
+			opacity: 1;
 			animation-name: slow-zoom;
 			animation-duration: 3000ms;
 			animation-delay: 300ms;
@@ -316,6 +319,7 @@ button{
 
 		.bg-img:nth-child(1){
 			display: none;
+			opacity: 1;
 		}
 
 		.bg-img:nth-child(2){
@@ -342,7 +346,7 @@ button{
 		}
 
 		.bg-img:nth-child(1){
-			left: 0;
+			opacity: 1;
 			animation-name: slow-zoom;
 			animation-duration: 3000ms;
 			animation-delay: 300ms;
