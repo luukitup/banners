@@ -263,42 +263,6 @@ button{
 		}
 
 		.message-1{
-			left: 0;
-		}
-	}
-
-	&.stage-3{
-		.slide-1{
-			left: 0;
-		}
-
-		.bg-img:nth-child(1){
-			left: -$w;
-			transform: scale(1.04);
-			animation-name: slow-zoom;
-			animation-duration: 3000ms;
-			animation-delay: 300ms;
-			animation-fill-mode: forwards;
-		}
-
-		.bg-img:nth-child(2){
-			left: -$w;
-			transform: scale(1.04);
-			animation-name: slow-zoom;
-			animation-duration: 3000ms;
-			animation-delay: 300ms;
-			animation-fill-mode: forwards;
-		}
-
-		.bg-img:nth-child(3){
-			opacity: 1;
-			animation-name: slow-zoom;
-			animation-duration: 3000ms;
-			animation-delay: 300ms;
-			animation-fill-mode: forwards;
-		}
-
-		.message-1{
 			opacity: 0;
 		}
 
@@ -307,18 +271,18 @@ button{
 		}
 	}
 
-	&.stage-4{
+	&.stage-3{
+
+		.message-2{
+			left: 0;
+		}
+
 		.slide-1{
 			opacity: 0;
 			left: 0;
 		}
 
 		.bg-img:nth-child(1){
-			left: -$w;
-			transform: scale(1.04);
-		}
-
-		.bg-img:nth-child(2){
 			left: -$w;
 			transform: scale(1.04);
 		}
@@ -346,7 +310,7 @@ button{
 		}
 	}
 
-	&.stage-5{
+	&.stage-4{
 		.slide-1{
 			display: none;
 		}
@@ -370,7 +334,7 @@ button{
 		}
 	}
 
-	&.stage-6{
+	&.stage-5{
 		.slide-1{
 			left: 0;
 		}
