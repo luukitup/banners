@@ -1,10 +1,10 @@
 {
     "version": "1.0", 
 
-    "title": "300x600 BENU - Algemeen", 
+    "title": "BENU - Algemeen", 
 
-    "width" : "300", 
-    "height": "600", 
+    "width" : "728", 
+    "height": "90", 
 
     "events": {
         "enabled": 0, 
