@@ -235,6 +235,9 @@ button {
   opacity: 0;
   left: 0;
 }
+#banner.stage-3 .message-2 {
+  left: 0;
+}
 #banner.stage-3 .bg-img:nth-child(1) {
   left: -336px;
   transform: scale(1.04);
