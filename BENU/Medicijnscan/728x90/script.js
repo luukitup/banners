@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
 
 var clickArea = document.getElementById('clickTag1');
 
-var clickTAGvalue = dhtml.getVar('clickTAG', 'https://www.wildeganzen.nl/help-mee/donateurs-in-beeld-o-m?utm_source=display&utm_medium=cpc&utm_campaign=donateursinbeeld&utm_content=martijn_BANNERIMAGE');
+var clickTAGvalue = dhtml.getVar('clickTAG', 'https://www.benu.nl/services/medicijnscan?utm_medium=display&utm_source=adform&utm_campaign=ieder-mens.1&utm_content=medicijnscan');
 var landingpagetarget = dhtml.getVar('landingPageTarget', '_blank');
 
 clickArea.onclick = function() {
