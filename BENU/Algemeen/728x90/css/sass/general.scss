@@ -248,6 +248,10 @@ button{
 		.bg-img:nth-child(1){
 			left: -$w;
 			transform: scale(1.04);
+			animation-name: slow-zoom;
+			animation-duration: 3000ms;
+			animation-delay: 300ms;
+			animation-fill-mode: forwards;
 		}
 
 		.bg-img:nth-child(2){
@@ -270,11 +274,20 @@ button{
 
 		.bg-img:nth-child(1){
 			left: -$w;
+			transform: scale(1.04);
+			animation-name: slow-zoom;
+			animation-duration: 3000ms;
+			animation-delay: 300ms;
+			animation-fill-mode: forwards;
 		}
 
 		.bg-img:nth-child(2){
 			left: -$w;
 			transform: scale(1.04);
+			animation-name: slow-zoom;
+			animation-duration: 3000ms;
+			animation-delay: 300ms;
+			animation-fill-mode: forwards;
 		}
 
 		.bg-img:nth-child(3){
@@ -302,15 +315,21 @@ button{
 
 		.bg-img:nth-child(1){
 			left: -$w;
+			transform: scale(1.04);
 		}
 
 		.bg-img:nth-child(2){
 			left: -$w;
+			transform: scale(1.04);
 		}
 
 		.bg-img:nth-child(3){
 			left: 0;
 			transform: scale(1.04);
+			animation-name: slow-zoom;
+			animation-duration: 3000ms;
+			animation-delay: 300ms;
+			animation-fill-mode: forwards;
 		}
 
 		.slide-2{
