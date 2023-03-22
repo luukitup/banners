@@ -27,10 +27,11 @@ body:hover {
   left: 0;
 }
 #img-wrapper .bg-img {
-  transition: 0.5s ease-out;
+  transition: 0.9s ease-out;
   position: absolute;
   top: 0;
-  left: 300px;
+  opacity: 0;
+  left: 0 !important;
 }
 
 p {
@@ -85,7 +86,7 @@ button {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   100% {
     transform: scale(1);
@@ -194,7 +195,7 @@ button {
   display: none;
 }
 #banner.stage-1 .bg-img:nth-child(1) {
-  left: 0;
+  opacity: 1;
   animation-name: slow-zoom;
   animation-duration: 3000ms;
   animation-delay: 300ms;
@@ -208,9 +209,14 @@ button {
 }
 #banner.stage-2 .bg-img:nth-child(1) {
   left: -300px;
+  transform: scale(1.04);
+  animation-name: slow-zoom;
+  animation-duration: 3000ms;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 #banner.stage-2 .bg-img:nth-child(2) {
-  left: 0;
+  opacity: 1;
   animation-name: slow-zoom;
   animation-duration: 3000ms;
   animation-delay: 300ms;
@@ -224,12 +230,22 @@ button {
 }
 #banner.stage-3 .bg-img:nth-child(1) {
   left: -300px;
+  transform: scale(1.04);
+  animation-name: slow-zoom;
+  animation-duration: 3000ms;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 #banner.stage-3 .bg-img:nth-child(2) {
   left: -300px;
+  transform: scale(1.04);
+  animation-name: slow-zoom;
+  animation-duration: 3000ms;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 #banner.stage-3 .bg-img:nth-child(3) {
-  left: 0;
+  opacity: 1;
   animation-name: slow-zoom;
   animation-duration: 3000ms;
   animation-delay: 300ms;
@@ -247,29 +263,44 @@ button {
 }
 #banner.stage-4 .bg-img:nth-child(1) {
   left: -300px;
+  transform: scale(1.04);
+  animation-name: slow-zoom;
+  animation-duration: 3000ms;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 #banner.stage-4 .bg-img:nth-child(2) {
   left: -300px;
+  transform: scale(1.04);
+  animation-name: slow-zoom;
+  animation-duration: 3000ms;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 #banner.stage-4 .bg-img:nth-child(3) {
   left: 0;
   transform: scale(1.04);
+  animation-name: slow-zoom;
+  animation-duration: 3000ms;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 #banner.stage-4 .slide-2 {
   left: 0;
 }
 #banner.stage-4 button {
   animation-name: grow-and-shrink;
-  animation-duration: 350ms;
+  animation-duration: 500ms;
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
-  animation-delay: 500ms;
+  animation-delay: 800ms;
 }
 #banner.stage-5 .slide-1 {
   display: none;
 }
 #banner.stage-5 .bg-img:nth-child(1) {
   display: none;
+  opacity: 1;
 }
 #banner.stage-5 .bg-img:nth-child(2) {
   display: none;
@@ -288,7 +319,7 @@ button {
   left: 0;
 }
 #banner.stage-6 .bg-img:nth-child(1) {
-  left: 0;
+  opacity: 1;
   animation-name: slow-zoom;
   animation-duration: 3000ms;
   animation-delay: 300ms;

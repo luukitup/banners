@@ -34,10 +34,11 @@ body{
 	left: 0;
 
 	.bg-img{
-		transition: 0.5s ease-out;
+		transition: 0.9s ease-out;
 		position: absolute;
 		top: 0;
-		left: $w;
+		opacity: 0;
+		left: 0 !important;
 	}
 }
 
@@ -94,7 +95,7 @@ button{
 		transform: scale(1);
 	}
 	50% {
-		transform: scale(1.1);
+		transform: scale(1.05);
 	}
 	100% {
 		transform: scale(1);
@@ -213,7 +214,7 @@ button{
 		}
 
 		.bg-img:nth-child(1){
-			left: 0;
+			opacity: 1;
 			animation-name: slow-zoom;
 			animation-duration: 3000ms;
 			animation-delay: 300ms;
@@ -232,10 +233,15 @@ button{
 
 		.bg-img:nth-child(1){
 			left: -$w;
+			transform: scale(1.04);
+			animation-name: slow-zoom;
+			animation-duration: 3000ms;
+			animation-delay: 300ms;
+			animation-fill-mode: forwards;
 		}
 
 		.bg-img:nth-child(2){
-			left: 0;
+			opacity: 1;
 			animation-name: slow-zoom;
 			animation-duration: 3000ms;
 			animation-delay: 300ms;
@@ -254,14 +260,24 @@ button{
 
 		.bg-img:nth-child(1){
 			left: -$w;
+			transform: scale(1.04);
+			animation-name: slow-zoom;
+			animation-duration: 3000ms;
+			animation-delay: 300ms;
+			animation-fill-mode: forwards;
 		}
 
 		.bg-img:nth-child(2){
 			left: -$w;
+			transform: scale(1.04);
+			animation-name: slow-zoom;
+			animation-duration: 3000ms;
+			animation-delay: 300ms;
+			animation-fill-mode: forwards;
 		}
 
 		.bg-img:nth-child(3){
-			left: 0;
+			opacity: 1;
 			animation-name: slow-zoom;
 			animation-duration: 3000ms;
 			animation-delay: 300ms;
@@ -285,15 +301,29 @@ button{
 
 		.bg-img:nth-child(1){
 			left: -$w;
+			transform: scale(1.04);
+			animation-name: slow-zoom;
+			animation-duration: 3000ms;
+			animation-delay: 300ms;
+			animation-fill-mode: forwards;
 		}
 
 		.bg-img:nth-child(2){
 			left: -$w;
+			transform: scale(1.04);
+			animation-name: slow-zoom;
+			animation-duration: 3000ms;
+			animation-delay: 300ms;
+			animation-fill-mode: forwards;
 		}
 
 		.bg-img:nth-child(3){
 			left: 0;
 			transform: scale(1.04);
+			animation-name: slow-zoom;
+			animation-duration: 3000ms;
+			animation-delay: 300ms;
+			animation-fill-mode: forwards;
 		}
 
 		.slide-2{
@@ -302,10 +332,10 @@ button{
 
 		button{
 			animation-name: grow-and-shrink;
-			animation-duration: 350ms;
+			animation-duration: 500ms;
 			animation-fill-mode: forwards;
 			animation-iteration-count: 3;
-			animation-delay: 500ms;
+			animation-delay: 800ms;
 		}
 	}
 
@@ -316,6 +346,7 @@ button{
 
 		.bg-img:nth-child(1){
 			display: none;
+			opacity: 1;
 		}
 
 		.bg-img:nth-child(2){
@@ -342,7 +373,7 @@ button{
 		}
 
 		.bg-img:nth-child(1){
-			left: 0;
+			opacity: 1;
 			animation-name: slow-zoom;
 			animation-duration: 3000ms;
 			animation-delay: 300ms;
