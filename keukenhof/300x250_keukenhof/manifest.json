@@ -1,0 +1,19 @@
+{
+    "version": "1.0", 
+
+    "title": "Keukenhof Holland", 
+
+    "width" : "300", 
+    "height": "250", 
+
+    "events": {
+        "enabled": 0, 
+        "list": {}
+    },
+
+    "clicktags": {
+        "clickTAG": "https://keukenhof.nl/nl/"
+    },
+
+    "source": "index.html"
+}
