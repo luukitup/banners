@@ -41,7 +41,7 @@ body:hover {
 p {
   color: white;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: medium;
   padding: 0;
   margin: 0;
   font-family: "avenir", sans-serif;
@@ -53,18 +53,6 @@ label {
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 24px;
-}
-
-button {
-  background-color: white;
-  font-family: "avenir", sans-serif;
-  border-radius: 50px;
-  padding: 5px 20px;
-  border: 0;
-  cursor: pointer;
-  color: #e96a24;
-  font-weight: 500;
-  font-size: 18px;
 }
 
 #call-to-action {
