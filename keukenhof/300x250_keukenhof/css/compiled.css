@@ -197,6 +197,10 @@ label {
   width: 184px;
 }
 
+.message.message-2 {
+  width: 220px;
+}
+
 #banner.stage-1 .bg-img, #banner.stage-2 .bg-img, #banner.stage-3 .bg-img {
   left: 0;
   opacity: 1;
