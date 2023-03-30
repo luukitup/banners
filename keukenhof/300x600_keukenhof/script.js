@@ -2,7 +2,6 @@ window.addEventListener('load', function () {
     
     var currentStage = 1;
 
-    // Skips the first slide
     var timePerSlide =  [2500, 2500, 2500, 100]
     var element = document.querySelector('#banner');
 

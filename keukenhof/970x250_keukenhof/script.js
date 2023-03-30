@@ -2,7 +2,7 @@ window.addEventListener('load', function () {
     
     var currentStage = 1;
 
-    // Skips the first slide
+
     var timePerSlide =  [2500, 2500, 2500, 100]
     var element = document.querySelector('#banner');
 
@@ -48,11 +48,13 @@ window.addEventListener('load', function () {
     
 })
 
+/*
 var clickArea = document.getElementById('clickTag1');
 
-var clickTAGvalue = dhtml.getVar('clickTAG', 'https://keukenhof.nl/nl/');
+var clickTAGvalue = dhtml.getVar('clickTAG', 'https://keukenhof.nl/nl/?utm_medium=banner&utm_source=iamsterdam&utm_campaign=keukenhof2023');
 var landingpagetarget = dhtml.getVar('landingPageTarget', '_blank');
 
 clickArea.onclick = function() {
     window.open(clickTAGvalue,landingpagetarget);
 }   
+*/

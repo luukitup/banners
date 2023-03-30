@@ -1,14 +1,22 @@
 <html>
     <head>
         <title>Keukenhof Holland</title>
-        <script>
-            document.write('<script src="'+ (window.API_URL || 'https://s1.adform.net/banners/scripts/rmb/Adform.DHTML.js?bv='+ Math.random()) +'"><\/script>');
-        </script>
         <link rel="stylesheet" href="https://use.typekit.net/hfu4maz.css">
         <link rel="stylesheet" href="css/compiled.css">
+        <script language="javascript">
+            window.onload = function() {
+                    init();
+    
+            }; 
+        </script>
+
+        <script language="javascript">
+            var clickTag = "https://keukenhof.nl/nl/?utm_medium=banner&utm_source=iamsterdam&utm_campaign=keukenhof2023";
+        </script>
+
     </head>
     <body>
-        <div id="clickTag1">
+        <a id="clickTag1" href="javascript:window.open(window.clickTag)">
             <main id="banner" class="stage-1">
                 <!-- Slide 1 -->
                 <div class="slide slide-1 absolute">                  
@@ -37,13 +45,12 @@
                 <div class="slide slide-2 absolute">
                     <div class="relative w-full h-full flex flex-col has-bg center-items">
                         <label>Boek je tickets via</label>
-                        <!-- <button>Keukenhof.nl</button> -->
                         <img class="button" src="img/button-orange.png" alt="Call to action button" />
                     </div>
                 </div>
                 <!-- END Slide 2 -->
             </main>
-        </div>
+        </a>
         <!-- <button id="next">Next slide</button>
         <div id="currentStage"></div> -->
         <script src="script.js"></script>
