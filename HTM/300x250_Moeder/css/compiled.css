@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+body {
+  max-width: 300px;
+  max-height: 250px;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+body:hover {
+  cursor: pointer;
+}
+
+#clickTag1 {
+  height: 100%;
+}
+
+#background-wrapper {
+  position: absolute;
+  left: 0;
+}
+#background-wrapper img {
+  position: absolute;
+}
+
+p {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+button {
+  background-color: #58a618;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  border-bottom-right-radius: 15px;
+  padding: 10px 20px;
+  border: 0;
+  cursor: pointer;
+}
+
+@keyframes grow-and-shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes big-zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(10);
+  }
+}
+@keyframes fade-animation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slow-zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.04);
+  }
+}
+@keyframes appear-animation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes slideLeft {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -225px;
+  }
+  50% {
+    margin-left: -225px;
+  }
+  75% {
+    margin-left: -450px;
+  }
+  100% {
+    margin-left: -450px;
+  }
+}
+.slide {
+  transition: 0.6s ease-out;
+  width: 100%;
+  height: 100%;
+  left: 300px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.slide-1 {
+  left: -300px;
+}
+
+.content {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.content img {
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+.col img:first-of-type {
+  margin-top: auto;
+}
+.col img:nth-child(2) {
+  margin-top: 17px;
+}
+
+.col:nth-child(2) img {
+  margin-left: auto;
+}
+
+#tagline {
+  height: 0px;
+  transition: 0.5s;
+}
+
+#main-text {
+  opacity: 0;
+  height: 0px;
+  transition: 0.5s;
+}
+
+#banner {
+  display: flex;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#banner.stage-1 .slide-1 {
+  left: 0;
+}
+#banner.stage-2 .slide-1 {
+  left: 0;
+}
+#banner.stage-2 #tagline {
+  height: 23px;
+}
+#banner.stage-2 #bg-slider {
+  animation-name: slideLeft;
+  animation-duration: 6s; /* 2 seconds for each stage */
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+#banner.stage-3 .slide-1 {
+  left: 0;
+}
+#banner.stage-3 #tagline {
+  height: 23px;
+}
+#banner.stage-3 #bg-slider {
+  animation-name: slideLeft;
+  animation-duration: 6s; /* 2 seconds for each stage */
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+#banner.stage-3 #main-text {
+  height: 48px;
+  opacity: 1;
+}
+#banner.stage-4 .slide-1 {
+  left: 0;
+}
+#banner.stage-4 #tagline, #banner.stage-4 #main-text {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.center-items {
+  justify-content: center;
+  align-items: center;
+}
+
+.defaultfont {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+}
+
+.grid-item {
+  position: relative;
+  top: 100%;
+  transition: 0.5s ease-out;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bg-first {
+  background-color: #58a618;
+}
+
+.bg-second {
+  background-color: #002664;
+}
+
+.color-first {
+  color: #58a618;
+}
+
+.color-second {
+  color: #002664;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+/*# sourceMappingURL=compiled.css.map */

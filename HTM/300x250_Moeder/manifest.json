@@ -1,7 +1,7 @@
 {
     "version": "1.0", 
 
-    "title": "HTM - Gezin", 
+    "title": "HTM - Moeder", 
 
     "width" : "300", 
     "height": "250", 
@@ -12,7 +12,7 @@
     },
 
     "clicktags": {
-        "clickTAG": "https://www.mbuy.nl/"
+        "clickTAG": "https://www.htm.nl/meivakantie?&utm_source=online&utm_medium=display_ad&utm_campaign=marketing&utm_content=uitjevaneencent&utm_term=b_moeder"
     },
 
     "source": "index.html"
