@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
 
 var clickArea = document.getElementById('clickTag1');
 
-var clickTAGvalue = dhtml.getVar('clickTAG', 'https://www.htm.nl/meivakantie?&utm_source=online&utm_medium=display_ad&utm_campaign=marketing&utm_content=uitjevaneencent&utm_term=c');
+var clickTAGvalue = dhtml.getVar('clickTAG', 'https://www.htm.nl/meivakantie?&utm_source=online&utm_medium=display_ad&utm_campaign=marketing&utm_content=uitjevaneencent&utm_term=c_opaoma');
 var landingpagetarget = dhtml.getVar('landingPageTarget', '_blank');
 
 clickArea.onclick = function() {
