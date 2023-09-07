@@ -27,7 +27,7 @@ body:hover {
   left: 0;
 }
 #img-wrapper .bg-img {
-  transition: 0.9s ease-out;
+  transition: 0.4s ease-out;
   position: absolute;
   top: 0;
   opacity: 0;
@@ -60,7 +60,7 @@ label {
   bottom: 92px;
   position: absolute;
   left: -300px;
-  transition: 0.6s;
+  transition: 0.4s ease-out;
 }
 
 button {
@@ -272,11 +272,11 @@ button {
 #banner.stage-3 .slide-2 {
   left: 0;
 }
-#banner.stage-3 button {
+#banner.stage-3 .button {
   animation-name: grow-and-shrink;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
-  animation-iteration-count: 3;
+  animation-iteration-count: 2;
   animation-delay: 800ms;
 }
 #banner.stage-4 .slide-1 {

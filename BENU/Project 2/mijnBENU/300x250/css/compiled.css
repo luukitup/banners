@@ -27,7 +27,7 @@ body:hover {
   left: 0;
 }
 #img-wrapper .bg-img {
-  transition: 0.9s ease-out;
+  transition: $transitionTime;
   position: absolute;
   top: 0;
   opacity: 0;
