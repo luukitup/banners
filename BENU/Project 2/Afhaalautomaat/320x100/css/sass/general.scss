@@ -79,15 +79,8 @@ label{
 	padding: 9px 15px;
 }	
 
-button{
-	background-color: $firstColor;
-	font-family: $defaultFont;
-	color: white;
-	border-bottom-right-radius: 15px;
-	padding: 9px;
-	border: 0;
-	cursor: pointer;
-	font-size: 10px;
+.button{
+	max-width: 146px;
 }
 
 #call-to-action{
