@@ -246,7 +246,7 @@ button {
   left: -336px;
   transform: scale(1.04);
 }
-#banner.stage-3 .bg-img:nth-child(3) {
+#banner.stage-3 .bg-img:nth-child(2) {
   left: 0;
   transform: scale(1.04);
   animation-name: slow-zoom;
@@ -274,7 +274,7 @@ button {
 #banner.stage-4 .bg-img:nth-child(2) {
   display: none;
 }
-#banner.stage-4 .bg-img:nth-child(3) {
+#banner.stage-4 .bg-img:nth-child(2) {
   display: none;
 }
 #banner.stage-4 .slide-2 {
