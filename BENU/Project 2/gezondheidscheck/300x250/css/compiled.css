@@ -258,7 +258,7 @@ button {
 #banner.stage-3 .slide-2 {
   left: 0;
 }
-#banner.stage-3 button {
+#banner.stage-3 .button {
   animation-name: grow-and-shrink;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
