@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
 
 var clickArea = document.getElementById('clickTag1');
 
-var clickTAGvalue = dhtml.getVar('clickTAG', 'https://www.benu.nl/services/gezondheidscheck?utm_medium=display&utm_source=adform&utm_campaign=ieder-mens.2&utm_content=gezondheidscheck');
+var clickTAGvalue = dhtml.getVar('clickTAG', 'https://www.benu.nl/services/gezondheidscheck?utm_medium=display&utm_source=adform&utm_campaign=ieder-mens.2&utm_term=320x100&utm_content=gezondheidscheck');
 var landingpagetarget = dhtml.getVar('landingPageTarget', '_blank');
 
 clickArea.onclick = function() {
