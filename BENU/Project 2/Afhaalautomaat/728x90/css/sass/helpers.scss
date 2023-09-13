@@ -43,7 +43,7 @@
 .grid-item{
 	position: relative;
 	top: 100%;
-	transition: 0.5s ease-out;
+	transition: $transitionTime;
 }
 
 .absolute{
