@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
 
 var clickArea = document.getElementById('clickTag1');
 
-var clickTAGvalue = dhtml.getVar('clickTAG', 'https://www.benu.nl/services/afhalen?utm_medium=display&utm_source=adform&utm_campaign=ieder-mens.2&utm_content=afhaalautomaat');
+var clickTAGvalue = dhtml.getVar('clickTAG', 'https://www.benu.nl/services/afhalen?utm_medium=display&utm_source=adform&utm_campaign=ieder-mens.2&utm_term=300x250&utm_content=afhaalautomaat');
 var landingpagetarget = dhtml.getVar('landingPageTarget', '_blank');
 
 clickArea.onclick = function() {
