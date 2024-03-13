@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <!-- WEBORAMA SCREENAD META DATA (don"t edit/remove) -->
+    <!-- SCRVERSION: screenad_interface_1.0.3 -->
+    <!-- SCRFORMAT: layer -->
+    <!-- SCRSTICKY: false -->
+    <!-- SCRWIDTH: 640 -->
+    <!-- SCRHEIGHT: 1500 -->
+    <!-- SCRTEMPLATENAME: Smart-Skins-_-Left -->
+    <!-- SCRTEMPLATEVERSION: 3.0.0 -->
+    <!-- SCRTEMPLATEDATE: 2023-08-01 -->
+    <!-- SCRTEMPLATECOMMENT: Enabling-tagvar-overwrites-sitespecs-value! -->
+    <!-- SCRTEMPLATETAGVARS: scrsticky:-true,-false,-scroll/scrvalign-(Force-vertical-align?):--top,-banner-or-#id -->
+
+    <script type="text/javascript" src="//media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+
+    <!-- Need jQuery? Use: <script type="text/javascript" src="//media.adrcdn.com/scripts/jquery.min.js"></script> -->
+    <!-- More libraries needed? Check: support.weborama.nl/hc/en-us/articles/210438526-Libraries -->
+
+    <script type="text/javascript">
+      /* Shared Settings */
+
+      // Shared Background (Cross-Elements) for Skins and Header (if present)
+      var BG_image = "background.png"; // Image file name. If non wanted, use: BG_image = false;
+      var BG_color = "transparent"; // Color used in space not covered by image. Accepts any CSS color value.
+      var BG_width = "auto"; // Width of the wallpaper. Use 'auto' for full viewport scalable size. Use a number for (non-scalabe) fixed size.
+
+      /* Template Settings */
+
+      // Activate scaling? This setting affects the "ScalableContent" div
+      var scaleContent = true;
+      // If so, how narrow can the scalable content get?
+      var minWidth = 100;
+      // Want to modify the original/max width as well? Use the #scalableContent CSS class below.
+      // Sets the #scalableContent scrolling. Set to true if you want the #scalableContent to scroll with the page to stay visible as long as possible.
+      var scrollContent = true;
+
+      /* Template Handlers */
+
+      // Custom start-up actions before ad set starts
+      function onInit() {
+        // Optional (next to initial CSS values)
+      }
+
+      // Actions for when all elements show on screen
+      function onStart() {
+        // All elements have been loaded and are ready for the animation to start
+      }
+    </script>
+    <script type="text/javascript" src="//media.adrcdn.com/ad-resources/apto/3.0.0/skinLeft.js"></script>
+    <style type="text/css">
+
+      @font-face {
+        font-family: avenir-black;
+        src: url('Avenir_Black.ttf') format('woff'),
+            url('Avenir_Black.ttf') format('truetype');
+        /* Add more file formats and paths if necessary */
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /* Mandatory Template CSS */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 1500px;
+      }
+      @media print {
+        * {
+          display: none !important;
+          background: none !important;
+        }
+      }
+      #stage {
+        width: 640px;
+        height: 1500px;
+        z-index: 50;
+        position: absolute;
+        right: 0px;
+      }
+      #content {
+        right: 0px;
+        position: absolute;
+        width: 100%;
+        height: 1500px;
+        z-index: 100;
+      }
+      #scalableContent {
+        position: absolute;
+        width: 300px;
+        height: 800px;
+        z-index: 150;
+        transform-origin: 100% 0%;
+        cursor: pointer;
+      }
+      /* Your Content CSS */
+
+      #exampleImage {
+        width: 60%; /* Setting a width in % so that it can scale up and down. */
+        min-width: 75px; /* Setting a min-width in px so the width in % can't go below a certain point. */
+        max-width: 172px; /* Setting a max-width in px so the width in % can't go above a certain point. */
+        /* These 3 CSS widths will allow your content to scale inside the #content div. Scaling in the #scalableContent div is done in a different way by adding a transform: scale; to the entire div. */
+        position: absolute;
+        right: 10%;
+        top: 100px;
+      }
+
+      body{
+        font-family: avenir-black;
+        text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+        color: white;
+      }
+
+      #banner-wrapper{
+        border: 1px solid #757575;
+        width: 300px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      .logo{
+        right: -10px;
+        position: relative;
+        max-width: 191px;
+        align-self: flex-end;
+        margin: 30px 0;
+      }
+
+      .button{
+        display: flex;
+        align-self: center;
+        max-width: 140px;
+        margin-bottom: 90px;
+        justify-self: end;
+        z-index: 1;
+      }
+
+      p{
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 0 30px;
+        text-align: right;
+        margin: 0;
+        flex-grow: 1;
+      }
+
+      #background-wrapper{
+        position: absolute;
+        bottom: -9px;
+        right: -1px;
+        z-index: -9;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="stage">
+      <div id="content">
+        <!-- Your Regular HTML Content -->
+        <!-- <img id="exampleImage" src="weborama.png" /> -->
+      </div>
+      <div id="scalableContent" onclick="screenad.click();">
+        <!-- Your Scalable HTML Content -->
+        <div id="banner-wrapper">
+          <img class="logo" src="Keukenhof_logo_left.svg" />
+          <p>
+            Ontdek de geschiedenis van 75 jaar Keukenhof
+          </p>
+          <img class="button" src="Button_lees_meer.svg">
+          <div id="background-wrapper">
+            <img src="beatrix.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Automated Shared Background - No editing please -->
+    <div id="sharedBackground"></div>
+  </body>
+</html>
