@@ -55,15 +55,6 @@
     <link rel="stylesheet" type="text/css" href="global.css">
     <style type="text/css">
 
-      @font-face {
-        font-family: avenir-black;
-        src: url('Avenir_Black.ttf') format('woff'),
-            url('Avenir_Black.ttf') format('truetype');
-        /* Add more file formats and paths if necessary */
-        font-weight: normal;
-        font-style: normal;
-      }
-
       /* Mandatory Template CSS */
       html,
       body {
@@ -105,22 +96,6 @@
       }
       /* Your Content CSS */
 
-      #exampleImage {
-        width: 60%; /* Setting a width in % so that it can scale up and down. */
-        min-width: 75px; /* Setting a min-width in px so the width in % can't go below a certain point. */
-        max-width: 172px; /* Setting a max-width in px so the width in % can't go above a certain point. */
-        /* These 3 CSS widths will allow your content to scale inside the #content div. Scaling in the #scalableContent div is done in a different way by adding a transform: scale; to the entire div. */
-        position: absolute;
-        right: 10%;
-        top: 100px;
-      }
-
-      body{
-        font-family: avenir-black;
-        text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
-        color: white;
-      }
-
       #banner-wrapper{
         /* border: 1px solid #757575; */
         width: 300px;
@@ -131,25 +106,12 @@
         align-self: flex-end;
       }
 
-      /* .logo{
-        right: -10px;
-        position: relative;
-        max-width: 191px;
-        align-self: flex-end;
-        margin: 0  0 30px 0;
-      } */
-
       .button{
         max-width: 140px;
       }
 
       p{
-        font-size: 2rem;
-        font-weight: bold;
-        padding: 0 30px;
         text-align: right;
-        margin: 0;
-        flex-grow: 1;
       }
 
       #background-wrapper{
