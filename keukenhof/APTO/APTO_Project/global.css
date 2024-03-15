@@ -1,13 +1,4 @@
 @font-face {
-    font-family: avenir-black;
-    src: url('Avenir_Black.ttf') format('woff'),
-        url('Avenir_Black.ttf') format('truetype');
-    /* Add more file formats and paths if necessary */
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: avenir-heavy;
     src: url('avenir_heavy.ttf') format('woff'),
         url('avenir_heavy.ttf') format('truetype');
@@ -38,7 +29,7 @@ p{
     margin-bottom: 90px;
     z-index: 1;
     animation: wobble 2s 3;
-    animation-delay: 3s;
+    animation-delay: 4s;
 }
 
 .logo{
