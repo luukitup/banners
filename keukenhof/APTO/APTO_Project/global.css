@@ -8,7 +8,7 @@ body{
     justify-self: end;
     margin-bottom: 90px;
     z-index: 1;
-    animation: wobble 2s infinite;
+    animation: wobble 2s 3;
     animation-delay: 2s;
 }
 
