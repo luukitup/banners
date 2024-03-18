@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <!-- WEBORAMA SCREENAD META DATA (don"t edit/remove) -->
+    <!-- SCRVERSION: screenad_interface_1.0.3 -->
+    <!-- SCRFORMAT: layer -->
+    <!-- SCRSTICKY: false -->
+    <!-- SCRWIDTH: 640 -->
+    <!-- SCRHEIGHT: 1500 -->
+    <!-- SCRTEMPLATENAME: Smart-Skins-_-Left -->
+    <!-- SCRTEMPLATEVERSION: 3.0.0 -->
+    <!-- SCRTEMPLATEDATE: 2023-08-01 -->
+    <!-- SCRTEMPLATECOMMENT: Enabling-tagvar-overwrites-sitespecs-value! -->
+    <!-- SCRTEMPLATETAGVARS: scrsticky:-true,-false,-scroll/scrvalign-(Force-vertical-align?):--top,-banner-or-#id -->
+
+    <script type="text/javascript" src="//media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
+
+    <!-- Need jQuery? Use: <script type="text/javascript" src="//media.adrcdn.com/scripts/jquery.min.js"></script> -->
+    <!-- More libraries needed? Check: support.weborama.nl/hc/en-us/articles/210438526-Libraries -->
+
+    <script type="text/javascript">
+      /* Shared Settings */
+
+      // Shared Background (Cross-Elements) for Skins and Header (if present)
+      var BG_image = "background.png"; // Image file name. If non wanted, use: BG_image = false;
+      var BG_color = "transparent"; // Color used in space not covered by image. Accepts any CSS color value.
+      var BG_width = "auto"; // Width of the wallpaper. Use 'auto' for full viewport scalable size. Use a number for (non-scalabe) fixed size.
+
+      /* Template Settings */
+
+      // Activate scaling? This setting affects the "ScalableContent" div
+      var scaleContent = true;
+      // If so, how narrow can the scalable content get?
+      var minWidth = 100;
+      // Want to modify the original/max width as well? Use the #scalableContent CSS class below.
+      // Sets the #scalableContent scrolling. Set to true if you want the #scalableContent to scroll with the page to stay visible as long as possible.
+      var scrollContent = true;
+
+      /* Template Handlers */
+
+      // Custom start-up actions before ad set starts
+      function onInit() {
+        // Optional (next to initial CSS values)
+      }
+
+      // Actions for when all elements show on screen
+      function onStart() {
+        // All elements have been loaded and are ready for the animation to start
+      }
+    </script>
+    <script type="text/javascript" src="//media.adrcdn.com/ad-resources/apto/3.0.0/skinLeft.js"></script>
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <style type="text/css">
+
+      /* Mandatory Template CSS */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 1500px;
+      }
+      @media print {
+        * {
+          display: none !important;
+          background: none !important;
+        }
+      }
+      #stage {
+        width: 640px;
+        height: 1500px;
+        z-index: 50;
+        position: absolute;
+        right: 0px;
+      }
+      #content {
+        right: 0px;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+        display: flex;
+        justify-content: right;
+      }
+      #scalableContent {
+        position: absolute;
+        width: 100%;
+        height: 0;
+        z-index: 150;
+        transform-origin: 100% 0%;
+        cursor: pointer;
+      }
+      /* Your Content CSS */
+
+      #banner-wrapper{
+        /* border: 1px solid #757575; */
+        width: 300px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        align-self: flex-end;
+      }
+
+      .button{
+        max-width: 140px;
+      }
+
+      p{
+        text-align: right;
+      }
+
+      #background-wrapper{
+        position: absolute;
+        bottom: -9px;
+        right: -1px;
+        z-index: -9;
+      }     
+
+      #background-wrapper img{
+        animation: beatrixAppear .75s forwards ease-out;
+        right: -150%;
+        transform: rotate(15deg);
+        position: relative;
+        animation-delay: 2.6s;
+        bottom: -25px;
+      }   
+
+      /* #background-wrapper img{
+        animation: move 1.5s forwards;
+        right: -150%;
+        position: relative;
+      }    */
+
+      @keyframes move {
+        0%, 100% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+        25% {
+          transform: translate(10px, 0) rotate(5deg);
+          right: -100%;
+        }
+        50% {
+          transform: translate(20px, 0) rotate(-5deg);
+          right: -50%;
+        }
+        75% {
+          transform: translate(10px, 0) rotate(5deg);
+          right: -25%;
+        }
+        100%{
+          transform: translate(0, 0) rotate(0deg);
+          right: 0;
+        }
+      }
+
+      @keyframes beatrixAppear {
+          0% {
+            right: -150%;
+            transform: rotate(15deg);
+            bottom: -25px;
+          }
+          100%{
+            right: 0;
+            transform: rotate(0);
+            bottom: 0;
+          }
+      }
+    </style>
+  </head>
+
+  <body onclick="screenad.click();">
+    <div id="stage">
+      <div id="content" >
+        <!-- Your Regular HTML Content -->
+        <!-- <img id="exampleImage" src="weborama.png" /> -->
+        <div id="banner-wrapper">
+          <img class="logo left" src="Keukenhof_logo_left.svg" />
+          <p>
+            Ontdek de <br> geschiedenis <Br> van 75 jaar <br>Keukenhof
+          </p>
+          <img class="button" src="Button_lees_meer.svg">
+          <div id="background-wrapper">
+            <img src="beatrix.png" />
+          </div>
+        </div>
+      </div>
+      <div id="scalableContent" onclick="screenad.click();"></div>
+    </div>
+    <!-- Automated Shared Background - No editing please -->
+    <div id="sharedBackground"></div>
+  </body>
+</html>
